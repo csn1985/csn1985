@@ -1,0 +1,26 @@
+{
+  "work_order": "NEX-PROFILE-WO-001",
+  "correction_delta": "CD01",
+  "status": "LOCKED_TO_CURRENT_BRANCH_BASE",
+  "target_repo": "csn1985/csn1985",
+  "baseline_main_sha": "f90ec11c26cec9a4dfe5675ea89fc9961788eb5e",
+  "observed_branch_head": "a56098cf50e59c49890bb8ccd5c0923f2e2c8b7f",
+  "company_repo": "KayzenRoot/nexlabs-company",
+  "company_main_tree_sha": "cbfa3e21a808622f4a3737b677277e4ca17ef30c",
+  "corporate_canonical_sha": {
+    "company_master": "51b7de15a3e6aaa9812d0040db5e4cc9da578955",
+    "brand_system": "9dd34cb3ec38eb518d98c0ebca8bf4b57053c643",
+    "name_mark": "5da116f6b61dd4a4814bb748c0b89f918ac95231",
+    "public_proof": "d36eb8c44df2455c0e72acf97117db34a693de54"
+  },
+  "website_repo": "KayzenRoot/nexlabs-website",
+  "website_sha": "e14cfbe4660b076db85e7e529befffe17a098cd1",
+  "official_logo_blob_sha": "51e61d8f98903ccf6b29e504ce5c9df1ab691ec1",
+  "review_requirements": [
+    "no force-push",
+    "no setting changes",
+    "no false marketing statements",
+    "exact SHA audit after changes",
+    "no merge until independent approved"
+  ]
+}
