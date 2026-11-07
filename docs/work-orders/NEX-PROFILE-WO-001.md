@@ -21,7 +21,7 @@ Create a polished English-language GitHub profile presentation for NexLabs Techn
 
 - Add README.md with the English corporate presentation.
 - Add assets/nexlabs-profile-banner.svg. It uses the approved mark geometry and white mark treatment, with a profile-specific near-black/lime presentation.
-- Add this Work Order and its Evidence Bundle under docs/.
+- Add this Work Order, its Evidence Bundle, versioned canonical Source Pack, Context Lock and a byte-identical approved logo copy under docs/ and assets/.
 - Open a Draft PR against main after reviewing the diff and evidence.
 
 ## Out of scope
@@ -34,7 +34,8 @@ Create a polished English-language GitHub profile presentation for NexLabs Techn
 
 ## Sources to read
 
-- docs/BOOTSTRAP.md in this repository.
+- docs/BOOTSTRAP.md and the target Source Pack in this repository.
+- KayzenRoot/nexlabs-company @ main tree cbfa3e21a808622f4a3737b677277e4ca17ef30c and its corporate checkpoint, decisions and brand/public-proof authorities.
 - KayzenRoot/nexlabs-company: .engineering/SOURCE-HIERARCHY.md, company/BRAND-SYSTEM.md, company/NAME-AND-MARK-USAGE.md, company/VISUAL-LANGUAGE.md, company/BRAND-VOICE-AND-PUBLIC-COPY.md, company/PUBLIC-WEBSITE-CONTENT-CONTRACT.md, company/PUBLIC-PROOF-AND-DISCLOSURE-POLICY.md, company/PUBLIC-ASSET-GOVERNANCE.md, and company/PUBLIC-PORTFOLIO-SCHEMA.md.
 - KayzenRoot/nexlabs-website: .engineering/SOURCE-HIERARCHY.md, .engineering/CHECKPOINT.md, .engineering/DEPLOYMENT.md, .engineering/HOME-CONTENT-SPEC.md, and the approved logo asset listed above.
 
@@ -71,6 +72,7 @@ Create a polished English-language GitHub profile presentation for NexLabs Techn
 - assets/nexlabs-profile-banner.svg
 - docs/work-orders/NEX-PROFILE-WO-001.md
 - docs/evidence/NEX-PROFILE-WO-001-EVIDENCE.md
+- docs/source-pack canonical files, docs/context-lock/NEX-PROFILE-WO-001.json and assets/official-nex-labs-technology.svg
 - Draft PR with the final Evidence Bundle summary.
 
 ## Review format

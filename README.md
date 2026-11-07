@@ -14,7 +14,7 @@
 
 ## 🚀 Our direction
 
-NexLabs Technology explores intelligent systems that connect software, data, and real-world operations through focused research and engineering.
+NexLabs Technology is an **AI-native technology company and product studio**. We explore intelligent systems that connect software, data, and real-world operations through focused research and evidence-first engineering. Our focus is on owned digital products and reusable technology, not generic outsourced development.
 
 ## 🧭 Focus areas
 
@@ -34,5 +34,5 @@ We use evidence, thoughtful engineering, and clear interfaces to make difficult 
 
 ## 🔭 Public work
 
-- [NexLabs website source](https://github.com/KayzenRoot/nexlabs-website)
+- [NexLabs website source](https://github.com/KayzenRoot/nexlabs-website) (in development; public production launch not approved)
 - [All public repositories](https://github.com/csn1985?tab=repositories)

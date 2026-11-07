@@ -1,64 +1,35 @@
-# Evidence Bundle — NEX-PROFILE-WO-001
+# Evidence Bundle — NEX-PROFILE-WO-001 / Correction Delta CD01
 
-**Status:** APPROVED at exact source head 55962c53779ad0355c1a0c8bb56e3b947e358212; evidence-only follow-up verified separately  
-**Risk:** LOW  
-**Repository:** csn1985/csn1985  
-**Baseline main SHA:** f90ec11c26cec9a4dfe5675ea89fc9961788eb5e  
-**Implementation snapshot SHA:** 3150b668f4b6c90954abcf5e76d01936a3fee629  
-**Implementation tree SHA:** 04cb871cc528a7be29561f8e0e959f8078cb5a89  
-**Branch:** feat/nex-profile-wo-001-corporate-identity  
-**Draft PR:** #1 — open, draft, unmerged
-**Exact-head audit:** APPROVED at 55962c53779ad0355c1a0c8bb56e3b947e358212
+**State: CORRECTION IN PROGRESS; A NEW INDEPENDENT AUDIT IS REQUIRED.**
+This supersedes the earlier self-declared APPROVED status because the exact HEAD and changed-file list have changed. No merge is authorized by this file.
 
-## Baseline and authorization
+## Baselines / observed Git state
+- Repository: csn1985/csn1985; public profile repo, authenticated as csn1985.
+- Main baseline: `f90ec11c26cec9a4dfe5675ea89fc9961788eb5e`, one docs-only bootstrap file.
+- Existing Draft PR #1 prior head: `a56098cf50e59c49890bb8ccd5c0923f2e2c8b7f`, four changed files (README, banner, Work Order, evidence).
+- The branch was concurrently updated during planning; updates were stopped until this exact HEAD could be inspected and rebased without force-push.
+- Current CD01 adds a canonical Source Pack, Context Lock and byte-identical official logo asset; it also corrects README corporate positioning and keeps the visual wordmark white.
+- Original `docs/BOOTSTRAP.md` and every unrelated repo/account setting remain untouched.
 
-- Authenticated NexLabs GitHub login: csn1985.
-- Repository 469418969 is public, default branch main, with push/admin permissions for the connected account.
-- Baseline main and the feature branch both pointed to f90ec11c26cec9a4dfe5675ea89fc9961788eb5e before implementation.
-- Baseline tree contained docs/BOOTSTRAP.md only. No README, profile presentation asset, or open PR existed.
-- docs/BOOTSTRAP.md records owner authorization, work order NEX-PROFILE-WO-001, the profile-only palette, the logo source, and the requirement to use a reviewed PR.
-- Branch readback reported protected=false. The repository rulesets endpoint returned an empty list. The branch-protection endpoint itself returned 403 to the integration; no repository settings were changed.
+## Authoritative source fingerprints
+- Company: `KayzenRoot/nexlabs-company` main tree `cbfa3e21a808622f4a3737b677277e4ca17ef30c`.
+- Company master SHA `51b7de15a3e6aaa9812d0040db5e4cc9da578955`; approved category AI-native technology company/product studio.
+- Brand system SHA `9dd34cb3ec38eb518d98c0ebca8bf4b57053c643`; mark usage SHA `5da116f6b61dd4a4814bb748c0b89f918ac95231`.
+- Public proof SHA `d36eb8c44df2455c0e72acf97117db34a693de54`; forbid unverified partnerships, scale, funding and product status.
+- Website: `KayzenRoot/nexlabs-website` at `e14cfbe4660b076db85e7e529befffe17a098cd1`.
+- Official logo source blob `51e61d8f98903ccf6b29e504ce5c9df1ab691ec1`, used directly for `assets/official-nex-labs-technology.svg` (exact blob SHA, byte-identical).
 
-## Source authority and provenance
+## Tests and scope observations
+- Static source scan confirms original banner has an accessible SVG title/description, approved Precision Blades path and no executable/remote SVG content.
+- The branch correction changes the small TECHNOLOGY wordmark color from lime to official white, retaining lime as an editorial rail/accent.
+- The official vector copy uses the exact upstream Git blob, not a reconstructed logo.
+- README has no live website URL; the only outbound links point to known accessible GitHub locations.
+- Company category, brand usage and website state are explicitly reflected in the corrected copy. No fictitious commercial proof is inserted.
+- No JS, third-party badge services, secrets, contact collection, production deployment or changed account settings.
+- Repository has no automated CI workflow; no green CI claim is made.
+- Manual GitHub browser rendering/desktop-mobile visual evidence remains PENDING.
 
-- Website source main SHA: e14cfbe4660b076db85e7e529befffe17a098cd1.
-- Official logo: public/brand/nex-labs-technology-extended-dark.svg; blob SHA 51e61d8f98903ccf6b29e504ce5c9df1ab691ec1.
-- The banner mark path was compared with the official SVG path and matched exactly. The approved mark remains cold white; lime is used only in the surrounding profile treatment.
-- Website checkpoint SHA: bfb3ef543eefef6bb919ddbf8c1fe1382b827190. It states M07A is complete, visual-fidelity work remains pending, and M07B deployment/launch is blocked.
-- Website deployment source SHA: a8c98ffdae423f5f8f08668338569fa1f2cf33e0. It states that production deployment, domain, and production URL are not admitted/selected. The README therefore links to the website source repository, not a claimed live site.
-- Approved capability copy comes from the website HOME-CONTENT-SPEC.md, blob SHA c24e74719ea4621b3ad14703d0af104971e6570e.
-- Company source main SHA: cbfa3e21a808622f4a3737b677277e4ca17ef30c.
-- The canonical company brand system, mark usage, visual language, public-copy contract, proof policy, asset governance, and portfolio schema were read. They prohibit fabricated customers, traction, deployments, investment, awards, and product status.
-
-## Files and object hashes at implementation snapshot
-
-| Path | Status | Blob SHA |
-| --- | --- | --- |
-| README.md | Added | f4b0cb9a320fa4e63dd6191aeb5eb6463efcb515 |
-| assets/nexlabs-profile-banner.svg | Added | c05025de83b418571402a3246847535af3a8a08e |
-| docs/work-orders/NEX-PROFILE-WO-001.md | Added | 2b53a53a518109e8ba03de02af27a4d289329e34 |
-
-The original docs/BOOTSTRAP.md was preserved.
-
-## Checks performed
-
-- GitHub compare from baseline to implementation: ahead_by=1, behind_by=0, total_commits=1.
-- Changed-file list at the implementation snapshot contained only the three files listed above.
-- Parsed the banner as XML with Python ElementTree: PASS; root is SVG and both title and description are present.
-- Confirmed the local README banner path resolves to the added asset.
-- Confirmed the approved logo path exactly matches the upstream source path.
-- Confirmed lime is outside the official mark, the banner contains no script or foreignObject, and the image has accessible title/description.
-- Scanned public copy for unsupported metrics, customer/client claims, funding/revenue claims, and leadership claims: none found.
-- Confirmed the linked source repository and the profile account repository listing exist.
-- No runtime tests apply. The baseline repository contains no CI workflow, so no automated CI result is claimed.
-- PR #1 readback at this exact head confirmed base SHA f90ec11c26cec9a4dfe5675ea89fc9961788eb5e, open/draft/unmerged state, and mergeable=true.
-- Exact PR diff: 2 commits ahead, 0 behind; four added files, 197 additions, no deletions.
-- This head has zero check-runs, zero commit statuses, and zero workflow runs.
-- Audit verdict APPROVED: source authority, copy truthfulness, logo provenance, scope, and PR flow meet NEX-PROFILE-WO-001. The PR remains Draft.
-
-## Limitations
-
-- The current GitHub connector can read the authenticated profile but does not expose an account-profile update operation. It cannot directly change the account display name, bio, website field, location, avatar, social links, or pinned repositories.
-- The GitHub profile page will not display this README until the PR is merged.
-- No merge, account-setting change, source website change, deployment, or repository-setting change was performed.
-- A follow-up commit records this audit result. The final PR head and readback are recorded in the PR body; the follow-up must preserve the README and banner blob SHAs listed above.
+## Review gate
+Verify updated PR head and base, all changed files, README/brand asset paths, actual SVG parsing, content/contrast, no source drift and merge rules; issue independent APPROVED / CORRECTION REQUIRED / BLOCKED verdict.
+The final exact PR HEAD is in GitHub PR metadata after this commit, not embedded as a self-referential hash here.
+**Do not merge or promote checkpoint before independent approval and post-merge verification.**
