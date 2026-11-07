@@ -1,12 +1,14 @@
 # Evidence Bundle — NEX-PROFILE-WO-001
 
-**Status:** Exact-head review pending the Draft PR readback  
+**Status:** APPROVED at exact source head 55962c53779ad0355c1a0c8bb56e3b947e358212; evidence-only follow-up verified separately  
 **Risk:** LOW  
 **Repository:** csn1985/csn1985  
 **Baseline main SHA:** f90ec11c26cec9a4dfe5675ea89fc9961788eb5e  
 **Implementation snapshot SHA:** 3150b668f4b6c90954abcf5e76d01936a3fee629  
 **Implementation tree SHA:** 04cb871cc528a7be29561f8e0e959f8078cb5a89  
-**Branch:** feat/nex-profile-wo-001-corporate-identity
+**Branch:** feat/nex-profile-wo-001-corporate-identity  
+**Draft PR:** #1 — open, draft, unmerged
+**Exact-head audit:** APPROVED at 55962c53779ad0355c1a0c8bb56e3b947e358212
 
 ## Baseline and authorization
 
@@ -49,10 +51,14 @@ The original docs/BOOTSTRAP.md was preserved.
 - Scanned public copy for unsupported metrics, customer/client claims, funding/revenue claims, and leadership claims: none found.
 - Confirmed the linked source repository and the profile account repository listing exist.
 - No runtime tests apply. The baseline repository contains no CI workflow, so no automated CI result is claimed.
+- PR #1 readback at this exact head confirmed base SHA f90ec11c26cec9a4dfe5675ea89fc9961788eb5e, open/draft/unmerged state, and mergeable=true.
+- Exact PR diff: 2 commits ahead, 0 behind; four added files, 197 additions, no deletions.
+- This head has zero check-runs, zero commit statuses, and zero workflow runs.
+- Audit verdict APPROVED: source authority, copy truthfulness, logo provenance, scope, and PR flow meet NEX-PROFILE-WO-001. The PR remains Draft.
 
 ## Limitations
 
 - The current GitHub connector can read the authenticated profile but does not expose an account-profile update operation. It cannot directly change the account display name, bio, website field, location, avatar, social links, or pinned repositories.
 - The GitHub profile page will not display this README until the PR is merged.
 - No merge, account-setting change, source website change, deployment, or repository-setting change was performed.
-- The final PR head SHA and post-PR diff/check readback will be recorded in the PR body and reviewed after PR creation.
+- A follow-up commit records this audit result. The final PR head and readback are recorded in the PR body; the follow-up must preserve the README and banner blob SHAs listed above.
